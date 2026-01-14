@@ -1,4 +1,5 @@
 import pickle
+import os
 from flask import Flask,request, jsonify, render_template
 import numpy as np 
 import pandas as pd
@@ -35,4 +36,8 @@ def predict():
     return render_template('index.html', results=results)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    # Get port from environment variable for Render deployment, default to 5000 for local
+    port = int(os.environ.get('PORT', 5000))
+    # Set debug=False for production
+    debug_mode = os.environ.get('FLASK_DEBUG', 'False') == 'True'
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
