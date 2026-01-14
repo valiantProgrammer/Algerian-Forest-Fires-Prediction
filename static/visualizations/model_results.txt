@@ -1,0 +1,45 @@
+================================================================================
+MODEL PERFORMANCE METRICS
+================================================================================
+
+Linear Regression
+----------------------------------------
+  MAE (Mean Absolute Error): 0.546824
+  MSE (Mean Squared Error):  0.674277
+  RMSE (Root MSE):           0.821144
+  R� Score:                  0.984766
+
+Ridge Regression
+----------------------------------------
+  MAE (Mean Absolute Error): 0.564231
+  MSE (Mean Squared Error):  0.694920
+  RMSE (Root MSE):           0.833619
+  R� Score:                  0.984299
+
+Lasso Regression
+----------------------------------------
+  MAE (Mean Absolute Error): 1.133176
+  MSE (Mean Squared Error):  2.248346
+  RMSE (Root MSE):           1.499449
+  R� Score:                  0.949202
+
+ElasticNet
+----------------------------------------
+  MAE (Mean Absolute Error): 1.882235
+  MSE (Mean Squared Error):  5.517251
+  RMSE (Root MSE):           2.348883
+  R� Score:                  0.875346
+
+Ridge CV
+----------------------------------------
+  MAE (Mean Absolute Error): 0.564231
+  MSE (Mean Squared Error):  0.694920
+  RMSE (Root MSE):           0.833619
+  R� Score:                  0.984299
+
+Lasso CV
+----------------------------------------
+  MAE (Mean Absolute Error): 0.635889
+  MSE (Mean Squared Error):  0.821446
+  RMSE (Root MSE):           0.906337
+  R� Score:                  0.981441
